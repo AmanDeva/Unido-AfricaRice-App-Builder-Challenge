@@ -1,0 +1,29 @@
+name: rice_quality_app
+description: "UNIDO AfricaRice Quality Assessment App"
+publish_to: "none"
+
+# This is the block that was missing!
+environment:
+  sdk: ">=3.2.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # AI and Image Processing
+  tflite_flutter: ^0.12.1
+  image: ^4.1.3
+  image_picker: ^1.0.7
+
+  # UI and Data
+  path_provider: ^2.1.5
+  sqflite: ^2.3.0
+  csv: ^5.0.2
+  share_plus: ^7.2.1
+  shared_preferences: ^2.5.4
+  geolocator: ^14.0.2
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/rice_quality_model.tflite
