@@ -1,11 +1,11 @@
-# 🌾 RICE_QUALITY_APP  
+# RICE_QUALITY_APP  
 ## UNIDO AfricaRice App Builder Challenge – Top 10 Submission
 
 A fully offline, edge-optimized rice quality grading system designed for real-world agricultural deployment in low-connectivity regions.
 
 ---
 
-# 📱 Application Preview & Test Device
+# Application Preview & Test Device
 
 ## Primary Test Device
 
@@ -29,13 +29,13 @@ A fully offline, edge-optimized rice quality grading system designed for real-wo
 
 ---
 
-## 🌾 Sample Input Image (Rice on Blue Background)
+## Sample Input Image (Rice on Blue Background)
 ![Rice Sample]<img width="720" height="1280" alt="image" src="https://github.com/user-attachments/assets/ab2c737e-ea35-4f65-b218-a4c07dd2e5f9" />
 )
 
 ---
 
-# 🚀 1. Installation & Usage
+# 1. Installation & Usage
 
 1. Transfer `app-release.apk` to any Android device running **Android 13 or higher**.
 2. Enable **Install from Unknown Sources**.
@@ -46,7 +46,7 @@ A fully offline, edge-optimized rice quality grading system designed for real-wo
 
 ---
 
-# 📊 2. Devices Tested
+# 2. Devices Tested
 
 ### Primary Device
 - iQOO Neo9 Pro (I2304)
@@ -61,7 +61,7 @@ A fully offline, edge-optimized rice quality grading system designed for real-wo
 
 ---
 
-# ⏱ 3. Average Inference Time
+# 3. Average Inference Time
 
 - **70–75 seconds per image**
 - CPU multi-threaded execution
@@ -71,7 +71,7 @@ A fully offline, edge-optimized rice quality grading system designed for real-wo
 
 ---
 
-# 🔒 4. Fully Offline Execution
+# 4. Fully Offline Execution
 
 This application is **100% offline**.
 
@@ -86,7 +86,7 @@ All computation occurs securely on-device.
 
 ---
 
-# 🧠 5. Model Architecture & Optimization
+# 5. Model Architecture & Optimization
 
 ## Base Model
 Optimized adaptation of the **3rd Place UNIDO Winning Solution**  
@@ -96,24 +96,24 @@ ConvNeXt-Small Vision Transformer
 
 ## Optimization Pipeline
 
-### 1️⃣ Tile Reduction
+### Tile Reduction
 - Reduced tiles from **48 → 12**
 - 75% RAM footprint reduction
 - Maintained statistical grading accuracy
 
-### 2️⃣ Graph Surgery
+### Graph Surgery
 - Removed unsupported `Erf` nodes in GELU
 - Applied `onnx2tf -rtpo Erf`
 - Prevented Android FlexDelegate crashes
 
-### 3️⃣ Quantization
+### Quantization
 - Dynamic Range Quantization (FP16)
 - 50% model size reduction
 - Optimized for mobile CPU execution
 
 ---
 
-# 🌍 Deployment Vision
+# Deployment Vision
 
 Engineered for:
 - Low-connectivity rural environments
@@ -126,7 +126,7 @@ Deployed for impact.
 
 ---
 
-# 🛠 Tech Stack
+# Tech Stack
 
 - Flutter (Android)
 - TensorFlow Lite
@@ -136,7 +136,7 @@ Deployed for impact.
 
 ---
 
-# 📌 Status
+# Status
 
 ✔ Fully Functional  
 ✔ Edge Optimized  
@@ -144,6 +144,11 @@ Deployed for impact.
 ✔ Competition Submission Ready  
 
 ---
+---
+
+# Demo Video
+
+🔗 Full Demo: https://your-link-here
 
 **Author:** Khushi  and Aman_Deva
 UNIDO AfricaRice App Builder Challenge – Top 10 Finalist
