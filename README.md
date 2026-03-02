@@ -9,7 +9,8 @@ md_content = """
 ## 📱 Application Preview & Test Device
 
 ### Primary Test Device
-![Device Info](419fef67-6076-44cd-afbf-72177187f96b.jpeg)
+![Device Info](<img width="576" height="1280" alt="image" src="https://github.com/user-attachments/assets/ba9a3abf-74c6-4cc8-8d37-92f85f98638c" />
+)
 
 **Device:** iQOO Neo9 Pro (Model I2304)  
 **OS:** OriginOS 6 (Android 13)  
@@ -20,7 +21,8 @@ md_content = """
 ---
 
 ### Version Information
-![Version Info](5b95c6ba-f4ed-4873-ad75-61c87874711b.jpeg)
+![Version Info](<img width="576" height="1280" alt="image" src="https://github.com/user-attachments/assets/5370e571-7a7d-4f8b-b51a-ec5064479e05" />
+)
 
 **Android Security Update:** January 1, 2026  
 **Kernel Version:** 5.15.178 (Android 13)  
@@ -28,10 +30,6 @@ md_content = """
 
 ---
 
-## 🌾 Sample Input Image (Rice on Blue Background)
-![Rice Sample](fb25caa4-c4fe-4ef5-bda0-88a851f61c52.png)
-
----
 
 # 1️⃣ How to Install and Run the App
 
@@ -115,13 +113,7 @@ Engineered for stability.
 Deployed for impact.
 """
 
-# Save as Markdown file using pypandoc
-import pypandoc
 
-output_file = "/mnt/data/RICE_QUALITY_APP.md"
-pypandoc.convert_text(md_content, 'md', format='md', outputfile=output_file, extra_args=['--standalone'])
-
-output_file
 
 
 
