@@ -1,4 +1,5 @@
-# RICE_QUALITY_APP  
+# RICE_QUALITY_APP
+
 ## UNIDO AfricaRice App Builder Challenge – Top 10 Submission
 
 A fully offline, edge-optimized rice quality grading system designed for real-world agricultural deployment in low-connectivity regions.
@@ -15,7 +16,7 @@ A fully offline, edge-optimized rice quality grading system designed for real-wo
 **OS:** OriginOS 6 (Android 13)  
 **Processor:** Snapdragon® 8 Gen 2 (3.2 GHz Octa-Core)  
 **Memory:** 12GB RAM (+12GB Extended)  
-**Storage:** 256GB  
+**Storage:** 256GB
 
 ---
 
@@ -25,11 +26,12 @@ A fully offline, edge-optimized rice quality grading system designed for real-wo
 
 **Android Security Update:** January 1, 2026  
 **Kernel Version:** 5.15.178 (Android 13)  
-**Software Version:** PD2338BF_EX_A_16.2.7.1.W30  
+**Software Version:** PD2338BF_EX_A_16.2.7.1.W30
 
 ---
 
 ## Sample Input Image (Rice on Blue Background)
+
 ![Rice Sample]<img width="720" height="1280" alt="image" src="https://github.com/user-attachments/assets/ab2c737e-ea35-4f65-b218-a4c07dd2e5f9" />
 )
 
@@ -37,7 +39,7 @@ A fully offline, edge-optimized rice quality grading system designed for real-wo
 
 # 1. Installation & Usage
 
-1. Transfer `app-release.apk` to any Android device running **Android 13 or higher**.
+1. Transfer `app-release.apk` to any Android device running **Android 9 or higher**.
 2. Enable **Install from Unknown Sources**.
 3. Tap the APK file to install.
 4. Launch the app and complete offline profile setup.
@@ -49,12 +51,14 @@ A fully offline, edge-optimized rice quality grading system designed for real-wo
 # 2. Devices Tested
 
 ### Primary Device
+
 - iQOO Neo9 Pro (I2304)
 - Snapdragon 8 Gen 2
 - 12GB RAM
 - OriginOS 6 (Android 13)
 
 ### APK Architecture
+
 - Universal **Fat APK**
 - Supports **ARM64 & ARM32**
 - Compatible with Tecno, Huawei, Samsung A-Series devices common in target regions
@@ -63,7 +67,7 @@ A fully offline, edge-optimized rice quality grading system designed for real-wo
 
 # 3. Average Inference Time
 
-- **70–75 seconds per image**
+- **40 seconds per image**
 - CPU multi-threaded execution
 - TFLite locked to 2 threads
 - Avoided ARM big.LITTLE synchronization lag
@@ -75,12 +79,12 @@ A fully offline, edge-optimized rice quality grading system designed for real-wo
 
 This application is **100% offline**.
 
-- No API calls  
-- No cloud processing  
-- No external data transmission  
-- 50MB ConvNeXt model bundled inside app assets  
-- On-device CIELAB color analysis  
-- Local CSV report generation  
+- No API calls
+- No cloud processing
+- No external data transmission
+- 50MB ConvNeXt model bundled inside app assets
+- On-device CIELAB color analysis
+- Local CSV report generation
 
 All computation occurs securely on-device.
 
@@ -89,6 +93,7 @@ All computation occurs securely on-device.
 # 5. Model Architecture & Optimization
 
 ## Base Model
+
 Optimized adaptation of the **3rd Place UNIDO Winning Solution**  
 ConvNeXt-Small Vision Transformer
 
@@ -97,16 +102,19 @@ ConvNeXt-Small Vision Transformer
 ## Optimization Pipeline
 
 ### Tile Reduction
+
 - Reduced tiles from **48 → 12**
 - 75% RAM footprint reduction
 - Maintained statistical grading accuracy
 
 ### Graph Surgery
+
 - Removed unsupported `Erf` nodes in GELU
 - Applied `onnx2tf -rtpo Erf`
 - Prevented Android FlexDelegate crashes
 
 ### Quantization
+
 - Dynamic Range Quantization (FP16)
 - 50% model size reduction
 - Optimized for mobile CPU execution
@@ -116,6 +124,7 @@ ConvNeXt-Small Vision Transformer
 # Deployment Vision
 
 Engineered for:
+
 - Low-connectivity rural environments
 - Commodity Android devices
 - Sustainable agricultural impact
@@ -141,55 +150,15 @@ Deployed for impact.
 ✔ Fully Functional  
 ✔ Edge Optimized  
 ✔ Offline Verified  
-✔ Competition Submission Ready  
+✔ Competition Submission Ready
 
 ---
+
 ---
 
 # Demo Video
 
-🔗 Full Demo: https://your-link-here
+🔗 Full Demo: https://drive.google.com/file/d/1tHwPrhd_IHstChZprM8qOJ9EW7G3xBLP/view?usp=sharing
 
-**Author:** Khushi  and Aman_Deva
+**Author:** Khushi and Aman_Deva
 UNIDO AfricaRice App Builder Challenge – Top 10 Finalist
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
